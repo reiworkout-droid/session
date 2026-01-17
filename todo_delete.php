@@ -1,6 +1,9 @@
 <?php
 include("functions.php");
 
+session_start();
+check_session_id();
+
 $id = $_GET["id"];
 
 $pdo = connect_to_db();
