@@ -1,6 +1,9 @@
 <?php
 include("functions.php");
 
+session_start();
+check_session_id();
+
 if (
   !isset($_POST['todo']) || $_POST['todo'] === '' ||
   !isset($_POST['deadline']) || $_POST['deadline'] === '' ||

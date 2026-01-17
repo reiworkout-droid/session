@@ -8,14 +8,14 @@
 </head>
 
 <body>
-  <form>
+  <form action="todo_login_act.php" method="POST">
     <fieldset>
       <legend>todoリストログイン画面</legend>
       <div>
-        username: <input type="text">
+        username: <input type="text" name="username">
       </div>
       <div>
-        password: <input type="text">
+        password: <input type="text" name="password">
       </div>
       <div>
         <button>Login</button>
